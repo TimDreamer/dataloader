@@ -1,0 +1,38 @@
+{
+  "name": "@timdreamer/dataloader",
+  "version": "1.0.0",
+  "description": "A lightweight, framework-agnostic batch processing utility for optimizing asynchronous data loading",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "test": "vitest",
+    "test:watch": "vitest --watch",
+    "demo:basic": "npx tsx examples/basic.ts",
+    "demo:advanced": "npx tsx examples/advanced.ts",
+    "prepublishOnly": "npm run build && npm test"
+  },
+  "keywords": [
+    "dataloader",
+    "batch",
+    "cache",
+    "deduplication",
+    "utility",
+    "typescript"
+  ],
+  "author": "Tim Lu",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/TimDreamer/dataloader"
+  },
+  "files": [
+    "dist",
+    "README.md"
+  ],
+  "devDependencies": {
+    "@types/node": "^24.10.1",
+    "typescript": "^5.9.3",
+    "vitest": "^4.0.14"
+  }
+}
